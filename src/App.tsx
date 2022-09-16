@@ -1,10 +1,22 @@
 import "./App.css";
+import { Routes, Route, Navigate } from "react-router-dom";
+
+// components
+import Layout from "./components/Layout";
+
+// pages
+import CountrySearchPage from "./pages/CountrySearchPage";
+import CountryDetailPage from "./pages/CountryDetail";
 
 function App() {
   return (
-    <div className="App">
-      <h1>React Countries!</h1>
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<CountrySearchPage />} />
+        <Route path="country/:name" element={<CountryDetailPage />} />
+        <Route path="*" element={<Navigate replace to="/" />} />
+      </Routes>
+    </Layout>
   );
 }
 
