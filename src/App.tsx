@@ -5,7 +5,7 @@ import Layout from "./components/Layout";
 
 // pages
 import CountrySearchPage from "./pages/CountrySearchPage";
-import CountryDetailPage from "./pages/CountryDetail";
+import CountryDetailPage from "./pages/CountryDetailPage";
 
 function App() {
   return (
