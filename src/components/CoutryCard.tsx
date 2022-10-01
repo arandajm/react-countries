@@ -19,18 +19,19 @@ const CountryCardContainer = styled.div`
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
-    background-color: #464444;
-    color: white;
+    background-color: ${(props) => props.theme.colors.secondary};
+}
+    color: ${(props) => props.theme.colors.white};
     h2 {
       font-size: 20px;
     }
 
     p {
-      font-weight: bold;
+      font-weight: ${(props) => props.theme.fontWeight.bold};
       margin: 10px 0 0;
 
       span {
-        font-weight: normal;
+        font-weight: ${(props) => props.theme.fontWeight.medium};
       }
     }
   }

@@ -10,10 +10,10 @@ html {
 } 
 body {
     margin: 0;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 300;
+    font-family: ${(props) => props.theme.fonts[0]};
+    font-weight: ${(props) => props.theme.fontWeight.slim};
     min-height: 100vh;
-    background-color: #242424;
+    background-color: ${(props) => props.theme.colors.primary};
 }
 
 main {
@@ -23,7 +23,7 @@ main {
 }
 
 header {
-  background-color: #464444;
+  background-color: ${(props) => props.theme.colors.secondary};
 }
 
 a {

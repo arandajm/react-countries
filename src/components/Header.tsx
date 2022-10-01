@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const HeaderStyled = styled.header`
-  color: white;
+  color: ${(props) => props.theme.colors.white};
   height: 80px;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@ const HeaderStyled = styled.header`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: white;
+  color: ${(props) => props.theme.colors.white};
 `;
 
 const Header = () => {

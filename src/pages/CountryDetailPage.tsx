@@ -22,7 +22,7 @@ const InfoWrapper = styled.div`
 const CountryWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  color: white;
+  color: ${(props) => props.theme.colors.white};
   gap: 50px;
 
   img {
@@ -33,13 +33,13 @@ const CountryWrapper = styled.div`
 const BorderCountries = styled.div`
   grid-column: 1 / 3;
   p {
-    font-weight: bold;
+    font-weight: ${(props) => props.theme.fontWeight.bold};
   }
 `;
 
 const BorderCountry = styled.span`
-  background-color: white;
-  color: black;
+  background-color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.black};
   padding: 5px;
   margin: 5px;
 `;
